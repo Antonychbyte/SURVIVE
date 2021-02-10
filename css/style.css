@@ -384,6 +384,98 @@ template {
   display: none;
 }
 
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
 @font-face {
   font-family: "Bebas";
   font-display: swap;
@@ -1455,98 +1547,6 @@ template {
   right: 0;
 }
 
-/*Обнуление*/
-
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-/*--------------------*/
-
 html {
   scroll-behavior: smooth;
 }
@@ -2105,4 +2105,96 @@ body {
     background: -o-radial-gradient(54.49% 85.05%, 54% 12%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.png) no-repeat bottom right/100%;
     background: radial-gradient(54% 12% at 54.49% 85.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.png) no-repeat bottom right/100%;
   }
+}
+
+.webp .sos-slider__wrapper{ background: url(../images/scrinshots/screenshot2.webp) no-repeat center right 31%/50% 90%, url(../images/scrinshots/screenshot3.webp) no-repeat center right 22%/50% 80%; }
+
+.webp .features{ background: -o-radial-gradient(30.85% 53.65%, 51.1% 80.48%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080a0b 99.74%) no-repeat center/cover, url(../images/features__bg.webp) no-repeat center/cover; }
+
+.webp .features{ background: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080a0b 99.74%) no-repeat center/cover, url(../images/features__bg.webp) no-repeat center/cover; }
+
+.webp .requirements{ background: -o-radial-gradient(64.32% 47.1%, 33.26% 45%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080a0b 99.74%), url(../images/requirements__bg.webp); }
+
+.webp .requirements{ background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080a0b 99.74%), url(../images/requirements__bg.webp); }
+
+.webp .quotes{ background: url(../images/quotes__bg.webp) no-repeat center/cover; }
+
+@media (max-width: 1024px){
+
+  .webp .requirements{ background: -o-radial-gradient(53.49% 69.05%, 44.54% 21%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 1024px){
+
+  .webp .requirements{ background: radial-gradient(44.54% 21% at 53.49% 69.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 960px){
+
+  .webp .features{ background: -o-radial-gradient(13.45% 44.62%, 27.45% 57.77%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080a0b 99.74%) no-repeat left/cover, url(../images/features__bg_trimmed.webp) no-repeat left/cover; }
+}
+
+@media (max-width: 960px){
+
+  .webp .features{ background: radial-gradient(27.45% 57.77% at 13.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080a0b 99.74%) no-repeat left/cover, url(../images/features__bg_trimmed.webp) no-repeat left/cover; }
+}
+
+@media (max-width: 860px){
+
+  .webp .requirements{ background: -o-radial-gradient(53.49% 75%, 44.54% 21%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 860px){
+
+  .webp .requirements{ background: radial-gradient(44.54% 21% at 53.49% 75%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 600px){
+
+  .webp .features{ background: -o-radial-gradient(12.45% 47.62%, 27% 57.77%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080a0b 99.74%) no-repeat left/cover, url(../images/features__bg_trimmed.webp) no-repeat left/cover; }
+}
+
+@media (max-width: 600px){
+
+  .webp .features{ background: radial-gradient(27% 57.77% at 12.45% 47.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080a0b 99.74%) no-repeat left/cover, url(../images/features__bg_trimmed.webp) no-repeat left/cover; }
+}
+
+@media (max-width: 600px){
+
+  .webp .requirements{ background: -o-radial-gradient(56.49% 79.05%, 49% 20%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 600px){
+
+  .webp .requirements{ background: radial-gradient(49% 20% at 56.49% 79.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 450px){
+
+  .webp .requirements{ background: -o-radial-gradient(54.49% 80%, 54% 15%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 450px){
+
+  .webp .requirements{ background: radial-gradient(54% 15% at 54.49% 80%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 430px){
+
+  .webp .features{ background: -o-radial-gradient(20% 47.62%, 27% 57.77%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080a0b 99.74%) no-repeat left/cover, url(../images/features__bg_trimmed.webp) no-repeat left/cover; }
+}
+
+@media (max-width: 430px){
+
+  .webp .features{ background: radial-gradient(27% 57.77% at 20% 47.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080a0b 99.74%) no-repeat left/cover, url(../images/features__bg_trimmed.webp) no-repeat left/cover; }
+}
+
+@media (max-width: 350px){
+
+  .webp .requirements{ background: -o-radial-gradient(54.49% 85.05%, 54% 12%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
+}
+
+@media (max-width: 350px){
+
+  .webp .requirements{ background: radial-gradient(54% 12% at 54.49% 85.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.webp) no-repeat bottom right/100%; }
 }
