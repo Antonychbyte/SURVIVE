@@ -670,8 +670,7 @@ h6 {
 
 .hero {
   position: relative;
-  background: center no-repeat;
-  background-size: cover;
+  background: url(../images/header__bg1.png) no-repeat center/cover;
   height: 100vh;
 }
 
@@ -723,14 +722,10 @@ h6 {
 
 .sos {
   position: relative;
-  background: -o-radial-gradient(50% 48.04%, 136.03% 54.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%);
-  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: -o-radial-gradient(50% 48.04%, 136.03% 54.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%) no-repeat center/cover, url(../images/sos-bg.png) no-repeat center/cover;
+  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%) no-repeat center/cover, url(../images/sos-bg.png) no-repeat center/cover;
 }
 
-.sos::before,
 .sos::after {
   content: "";
   position: absolute;
@@ -738,14 +733,6 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.sos::before {
-  background: -o-radial-gradient(50% 48.04%, 136.03% 54.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%);
-  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%);
-}
-
-.sos::after {
   background: #0f0f0f;
   opacity: 0.9;
 }
@@ -2106,6 +2093,12 @@ body {
     background: radial-gradient(54% 12% at 54.49% 85.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080a0b 100%), url(../images/requirements__bg_small.png) no-repeat bottom right/100%;
   }
 }
+
+.webp .hero{ background: url(../images/header__bg1.webp) no-repeat center/cover; }
+
+.webp .sos{ background: -o-radial-gradient(50% 48.04%, 136.03% 54.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%) no-repeat center/cover, url(../images/sos-bg.webp) no-repeat center/cover; }
+
+.webp .sos{ background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%) no-repeat center/cover, url(../images/sos-bg.webp) no-repeat center/cover; }
 
 .webp .sos-slider__wrapper{ background: url(../images/scrinshots/screenshot2.webp) no-repeat center right 31%/50% 90%, url(../images/scrinshots/screenshot3.webp) no-repeat center right 22%/50% 80%; }
 
